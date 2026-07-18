@@ -3,10 +3,10 @@
 // These are safe to commit — Firestore security rules (see firestore.rules)
 // are what actually control who can read/write data, not this config.
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID",
+  apiKey: "AIzaSyAXN-3xM4qy3sy40Uy2ifnGm-2zaXGTfD4",
+  authDomain: "ammamma-tributes.firebaseapp.com",
+  projectId: "ammamma-tributes",
+  storageBucket: "ammamma-tributes.firebasestorage.app",
+  messagingSenderId: "525564916076",
+  appId: "1:525564916076:web:1e7791ccf16af20caa0349"
 };
