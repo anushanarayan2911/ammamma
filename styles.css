@@ -129,6 +129,20 @@ h1, h2, h3 {
 
 .nav-list a:hover { color: var(--accent); }
 
+.nav-cta-item { display: flex; align-items: center; }
+
+.nav-cta {
+  background: var(--accent);
+  color: #fff !important;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.nav-cta:hover { background: var(--accent-dark); color: #fff !important; }
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -532,13 +546,24 @@ h1, h2, h3 {
     transition: max-height 0.25s ease;
   }
 
-  .nav-list.open { max-height: 300px; }
+  .nav-list.open { max-height: 380px; }
 
   .nav-list li { border-top: 1px solid var(--rule); }
 
   .nav-list a {
     display: block;
     padding: 16px 20px;
+  }
+
+  .nav-cta-item {
+    border-top: none;
+    padding: 14px 20px 18px;
+  }
+
+  .nav-cta-item .nav-cta {
+    display: block;
+    text-align: center;
+    padding: 12px;
   }
 
   .hero { padding: 70px 0 56px; }
