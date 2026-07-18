@@ -457,44 +457,6 @@ h1, h2, h3 {
   margin: 0;
 }
 
-/* Service */
-.service { padding: 90px 0; background: #fff; }
-
-.service-card {
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: center;
-  border: 1px solid var(--rule);
-  border-radius: 8px;
-  padding: 40px;
-}
-
-.service-card > p {
-  color: var(--ink-soft);
-  margin: 0 0 28px;
-}
-
-.service-details {
-  display: grid;
-  gap: 20px;
-  margin: 0;
-  text-align: left;
-}
-
-.service-details dt {
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 4px;
-}
-
-.service-details dd {
-  margin: 0;
-  font-size: 1rem;
-  color: var(--ink);
-}
-
 /* Footer */
 .site-footer {
   background: var(--cream-alt);
