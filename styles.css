@@ -426,6 +426,11 @@ h1, h2, h3 {
 
 .guestbook-form button:hover { background: var(--accent-dark); }
 
+.guestbook-form button:disabled {
+  background: var(--ink-soft);
+  cursor: not-allowed;
+}
+
 .form-status {
   margin: 10px 0 0;
   font-size: 0.85rem;
@@ -468,6 +473,19 @@ h1, h2, h3 {
   font-size: 1rem;
   margin: 0 0 14px;
   color: var(--ink);
+}
+
+.tribute-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 120px;
+}
+
+.tribute-empty p {
+  color: var(--ink-soft);
+  margin: 0;
 }
 
 .tribute-name {

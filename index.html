@@ -80,7 +80,7 @@
       </div>
       <ol class="timeline-list">
         <li class="timeline-item">
-          <span class="timeline-year">1950</span>
+          <span class="timeline-year">1927</span>
           <div class="timeline-content">
             <span class="timeline-dot" aria-hidden="true"></span>
             <h3>Early Beginnings</h3>
@@ -190,23 +190,7 @@
         <p class="eyebrow">Recent Tributes</p>
         <div class="tributes-carousel">
           <button type="button" class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous tribute">&#8249;</button>
-          <ul class="tributes-list" id="tributesList">
-            <li class="tribute-card">
-              <p>&ldquo;Dr. Seetha was the first person to teach me that medicine is an art before it is a science. Her voice calmed anxious parents and taught chaotic residents how to pause and look at the patient. I carry her lessons with me in my practice every single day.&rdquo;</p>
-              <span class="tribute-name">Dr. Alistair Vance</span>
-              <span class="tribute-role">Former Student &amp; Colleague</span>
-            </li>
-            <li class="tribute-card">
-              <p>&ldquo;She cared for all three of our children since they were babies. When our daughter was diagnosed with chronic asthma, Dr. Seetha gave us her personal number and walked us through every scary evening. She felt like an elder family member. We are forever grateful.&rdquo;</p>
-              <span class="tribute-name">The Banerjee Family</span>
-              <span class="tribute-role">Patients for 18 Years</span>
-            </li>
-            <li class="tribute-card">
-              <p>&ldquo;In the world she was a great doctor, but to us she was simply Atta&mdash;with her warm smiles, the absolute best filter coffee, and an infectious love for nature walks. Her quiet, steady guidance kept our family grounded.&rdquo;</p>
-              <span class="tribute-name">Ramesh Tekumalla</span>
-              <span class="tribute-role">Nephew</span>
-            </li>
-          </ul>
+          <ul class="tributes-list" id="tributesList"></ul>
           <button type="button" class="carousel-btn carousel-next" id="carouselNext" aria-label="Next tribute">&#8250;</button>
         </div>
       </div>
@@ -238,6 +222,9 @@
   </div>
 </footer>
 
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
