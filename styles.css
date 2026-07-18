@@ -475,19 +475,6 @@ h1, h2, h3 {
   color: var(--ink);
 }
 
-.tribute-empty {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  min-height: 120px;
-}
-
-.tribute-empty p {
-  color: var(--ink-soft);
-  margin: 0;
-}
-
 .tribute-name {
   display: block;
   font-weight: 600;
