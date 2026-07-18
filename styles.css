@@ -92,7 +92,7 @@ h1, h2, h3 {
 .main-nav {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .brand {
@@ -120,6 +120,7 @@ h1, h2, h3 {
 
 .nav-list {
   display: flex;
+  align-items: center;
   gap: 40px;
   list-style: none;
   margin: 0;
@@ -537,8 +538,6 @@ h1, h2, h3 {
 
 @media (max-width: 640px) {
   .container { padding: 0 20px; }
-
-  .main-nav { justify-content: flex-end; }
 
   .nav-toggle { display: flex; }
 
