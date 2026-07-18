@@ -352,9 +352,20 @@ h1, h2, h3 {
 .guestbook { padding: 90px 0; background: var(--cream-alt); }
 
 .guestbook-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 64px;
+}
+
+.guestbook-form-wrap {
+  width: 100%;
+  max-width: 640px;
+}
+
+.tributes-list-wrap {
+  width: 100%;
+  max-width: 800px;
 }
 
 .guestbook-form-wrap h2 { font-size: 2rem; margin-bottom: 26px; }
@@ -413,25 +424,39 @@ h1, h2, h3 {
   min-height: 1.2em;
 }
 
+.tributes-carousel {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 .tributes-list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 4px 0;
   display: flex;
-  flex-direction: column;
-  gap: 18px;
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
+.tributes-list::-webkit-scrollbar { display: none; }
+
 .tribute-card {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
   background: #fff;
   border: 1px solid var(--rule);
   border-radius: 6px;
-  padding: 22px;
+  padding: 28px;
 }
 
 .tribute-card p {
   font-style: italic;
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin: 0 0 14px;
   color: var(--ink);
 }
@@ -446,6 +471,28 @@ h1, h2, h3 {
   display: block;
   font-size: 0.8rem;
   color: var(--ink-soft);
+}
+
+.carousel-btn {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--rule);
+  background: #fff;
+  color: var(--accent);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.carousel-btn:hover {
+  background: var(--accent);
+  color: #fff;
 }
 
 /* Quote banner */
@@ -523,8 +570,7 @@ h1, h2, h3 {
 
 /* Responsive */
 @media (max-width: 860px) {
-  .tribute-grid,
-  .guestbook-grid {
+  .tribute-grid {
     grid-template-columns: 1fr;
     gap: 48px;
   }

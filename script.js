@@ -18,6 +18,16 @@ navList.querySelectorAll('a').forEach((link) => {
 const form = document.getElementById('tributeForm');
 const status = document.getElementById('formStatus');
 const list = document.getElementById('tributesList');
+const carouselPrev = document.getElementById('carouselPrev');
+const carouselNext = document.getElementById('carouselNext');
+
+carouselPrev.addEventListener('click', () => {
+  list.scrollBy({ left: -list.clientWidth, behavior: 'smooth' });
+});
+
+carouselNext.addEventListener('click', () => {
+  list.scrollBy({ left: list.clientWidth, behavior: 'smooth' });
+});
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -34,6 +44,7 @@ form.addEventListener('submit', (event) => {
     <span class="tribute-role">Just now</span>
   `;
   list.prepend(item);
+  list.scrollTo({ left: 0, behavior: 'smooth' });
 
   status.textContent = 'Thank you — your tribute has been shared.';
   form.reset();
