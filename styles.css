@@ -204,12 +204,20 @@ h1, h2, h3 {
   width: 180px;
   height: 180px;
   border-radius: 50%;
+  overflow: hidden;
   border: 4px solid #fff;
   box-shadow: 0 0 0 1px var(--rule), 0 20px 40px rgba(60, 45, 35, 0.14);
   background: linear-gradient(145deg, var(--accent) 0%, var(--accent-dark) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .hero-photo-initial {
