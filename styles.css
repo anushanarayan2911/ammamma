@@ -85,13 +85,20 @@ h1, h2, h3 {
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 24px;
   height: 76px;
+}
+
+.main-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .brand {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   gap: 10px;
   text-decoration: none;
   color: var(--ink);
@@ -124,6 +131,7 @@ h1, h2, h3 {
   text-decoration: none;
   font-size: 0.88rem;
   letter-spacing: 0.02em;
+  text-align: center;
   transition: color 0.2s ease;
 }
 
@@ -134,8 +142,8 @@ h1, h2, h3 {
 .nav-cta {
   background: var(--accent);
   color: #fff !important;
-  padding: 10px 20px;
-  border-radius: 4px;
+  padding: 10px 22px;
+  border-radius: 999px;
   font-weight: 600;
   white-space: nowrap;
   transition: background 0.2s ease;
@@ -529,6 +537,8 @@ h1, h2, h3 {
 
 @media (max-width: 640px) {
   .container { padding: 0 20px; }
+
+  .main-nav { justify-content: flex-end; }
 
   .nav-toggle { display: flex; }
 
